@@ -60,7 +60,7 @@ export default function RootLayout({
     >
       <body className="font-sans antialiased text-foreground">
         <Navbar />
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen overflow-x-hidden">{children}</main>
         <Footer />
         <WhatsAppButton />
         {process.env.NODE_ENV === "production" && <Analytics />}

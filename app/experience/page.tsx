@@ -55,7 +55,7 @@ export default function ExperiencePage() {
             </span>
           </RevealOnScroll>
           <RevealOnScroll animation="animate-reveal-left" delay="delay-100" once={false}>
-            <h1 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.95] tracking-tight text-balance md:text-8xl">
+            <h1 className="mt-5 max-w-4xl font-serif text-4xl leading-[0.95] tracking-tight text-balance md:text-8xl">
               L&apos;art de la beauté,
               <br />
               <span className="italic text-accent">pensé pour vous.</span>

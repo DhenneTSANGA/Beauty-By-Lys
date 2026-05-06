@@ -32,7 +32,7 @@ export default function ReservationPage() {
             </span>
           </RevealOnScroll>
           <RevealOnScroll animation="animate-reveal-left" delay="delay-100" once={false}>
-            <h1 className="mt-5 max-w-5xl font-serif text-5xl leading-[0.95] tracking-tight text-balance md:text-8xl">
+            <h1 className="mt-5 max-w-5xl font-serif text-4xl leading-[0.95] tracking-tight text-balance md:text-8xl">
               Réservez votre
               <br />
               <span className="italic text-accent">moment Lys.</span>

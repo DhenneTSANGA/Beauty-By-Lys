@@ -33,7 +33,7 @@ export default function UniversPage() {
               <span className="text-xs uppercase tracking-[0.22em] text-muted-foreground">
                 — À propos
               </span>
-              <h1 className="mt-5 font-serif text-5xl leading-[0.95] tracking-tight text-balance md:text-8xl">
+              <h1 className="mt-5 font-serif text-4xl leading-[0.95] tracking-tight text-balance md:text-8xl">
                 Beauty by Lys,
                 <br />
                 <span className="italic text-accent">une signature.</span>

@@ -19,7 +19,7 @@ export function WhatsAppButton() {
             initial={{ opacity: 0, y: 20, scale: 0.9, transformOrigin: "bottom right" }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
-            className="mb-2 w-[320px] overflow-hidden rounded-2xl bg-card shadow-2xl border border-border"
+            className="mb-2 w-[calc(100vw-3rem)] max-w-[320px] overflow-hidden rounded-2xl bg-card shadow-2xl border border-border"
           >
             {/* Header */}
             <div className="bg-[#25D366] p-4 text-white flex items-center justify-between">

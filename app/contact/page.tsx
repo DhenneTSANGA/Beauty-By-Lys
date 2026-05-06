@@ -21,7 +21,7 @@ export default function ContactPage() {
             <span className="text-xs uppercase tracking-[0.22em] text-muted-foreground">
               — Contact & Infos
             </span>
-            <h1 className="mt-5 font-serif text-5xl leading-[0.95] tracking-tight text-balance md:text-8xl">
+            <h1 className="mt-5 font-serif text-4xl leading-[0.95] tracking-tight text-balance md:text-8xl">
               Nous trouver,
               <br />
               <span className="italic text-accent">nous écrire.</span>

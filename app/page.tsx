@@ -21,7 +21,7 @@ export default function HomePage() {
             </RevealOnScroll>
 
             <RevealOnScroll animation="animate-reveal-left" delay="delay-100" once={false}>
-              <h1 className="mt-6 font-serif text-5xl leading-[0.95] tracking-tight text-balance md:text-7xl lg:text-[5.5rem]">
+              <h1 className="mt-6 font-serif text-4xl leading-[0.95] tracking-tight text-balance md:text-7xl lg:text-[5.5rem]">
                 L&apos;art de
                 <br />
                 <span className="italic text-accent">vous sublimer</span>
