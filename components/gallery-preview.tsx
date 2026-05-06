@@ -3,12 +3,13 @@ import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
 
 const items = [
-  { src: "/images/nails-4.jpg", alt: "Nail art floral" },
-  { src: "/images/nails-5.jpg", alt: "Manucure rouge classique" },
-  { src: "/images/nails-6.jpg", alt: "Effet glass holographique" },
-  { src: "/images/nails-7.jpg", alt: "Chrome champagne" },
-  { src: "/images/nails-8.jpg", alt: "Ombre nude pastel" },
-  { src: "/images/nails-1.jpg", alt: "French gold accent" },
+  { src: "/images/beauty/femmes/36.png", alt: "Coiffure de mariée" },
+  { src: "/images/beauty/hommes/57.png", alt: "Coupe Homme" },
+  { src: "/images/beauty/femmes/85.png", alt: "Lace frontale" },
+  { src: "/images/beauty/ongleries/97.png", alt: "Pose Nail Art" },
+  { src: "/images/beauty/ongleries/104.png", alt: "Ombre Nail Art" },
+  { src: "/images/beauty/ongleries/105.png", alt: "Nail Art Prestige" },
+  
 ]
 
 export function GalleryPreview() {

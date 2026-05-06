@@ -9,30 +9,30 @@ import { RevealOnScroll } from "@/components/reveal-on-scroll"
 import { cn } from "@/lib/utils"
 
 const realisationsFemmes = [
-  { src: "/images/portrait.jpg", alt: "Tresses Signature" },
-  { src: "/images/hero-nails.jpg", alt: "Coiffure de mariée" },
-  { src: "/images/service-detail.jpg", alt: "Chignon sophistiqué" },
-  { src: "/images/nails-1.jpg", alt: "Tresses bohèmes" },
-  { src: "/images/nails-2.jpg", alt: "Coupe au carré" },
-  { src: "/images/nails-3.jpg", alt: "Mèches et balayage" },
+  { src: "/images/beauty/femmes/100.png", alt: "Tresses Signature" },
+  { src: "/images/beauty/femmes/82.png", alt: "Coiffure de mariée" },
+  { src: "/images/beauty/femmes/98.png", alt: "Chignon sophistiqué" },
+  { src: "/images/beauty/femmes/79.png", alt: "Tresses bohèmes" },
+  { src: "/images/beauty/femmes/3.png", alt: "Coupe au carré" },
+  { src: "/images/beauty/femmes/43.png", alt: "Mèches et balayage" },
 ]
 
 const realisationsHommes = [
-  { src: "/images/salon-interior.jpg", alt: "Dégradé à blanc" },
-  { src: "/images/portrait.jpg", alt: "Taille de barbe" },
-  { src: "/images/service-detail.jpg", alt: "Coupe classique" },
-  { src: "/images/nails-4.jpg", alt: "Contour parfait" },
-  { src: "/images/nails-5.jpg", alt: "Soin visage homme" },
-  { src: "/images/nails-6.jpg", alt: "Motif artistique" },
+  { src: "/images/beauty/hommes/50.png", alt: "Dégradé à blanc" },
+  { src: "/images/beauty/hommes/58.png", alt: "Taille de barbe" },
+  { src: "/images/beauty/hommes/107.png", alt: "Coupe classique" },
+  { src: "/images/beauty/hommes/74.png", alt: "Contour parfait" },
+  { src: "/images/beauty/hommes/24.png", alt: "Soin visage homme" },
+  { src: "/images/beauty/hommes/47.png", alt: "Motif artistique" },
 ]
 
 const realisationsOngleries = [
-  { src: "/images/nails-1.jpg", alt: "French gold accent" },
-  { src: "/images/nails-2.jpg", alt: "Chrome rose stiletto" },
-  { src: "/images/nails-3.jpg", alt: "French milky" },
-  { src: "/images/nails-4.jpg", alt: "Floral nail art" },
-  { src: "/images/nails-5.jpg", alt: "Rouge classique" },
-  { src: "/images/nails-6.jpg", alt: "Glass holographique" },
+  { src: "/images/beauty/ongleries/97.png", alt: "French gold accent" },
+  { src: "/images/beauty/ongleries/112.png", alt: "Chrome rose stiletto" },
+  { src: "/images/beauty/ongleries/41.png", alt: "French milky" },
+  { src: "/images/beauty/ongleries/7.png", alt: "Floral nail art" },
+  { src: "/images/beauty/ongleries/42.png", alt: "Rouge classique" },
+  { src: "/images/beauty/ongleries/96.png", alt: "Floral nail art" },
 ]
 
 function GallerySection({ 
@@ -57,7 +57,7 @@ function GallerySection({
         </div>
       </div>
       
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-6 lg:grid-cols-3">
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-6 lg:grid-cols-3 3xl:grid-cols-4 4xl:grid-cols-6">
         {items.map((item, i) => (
           <RevealOnScroll key={i} animation="animate-reveal-up" delay={i * 100}>
             <button 

@@ -111,6 +111,10 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
+  /* Extra Breakpoints */
+  --breakpoint-3xl: 120rem;
+  --breakpoint-4xl: 160rem;
+
   /* Animations */
   --animate-reveal-left: reveal-left 1s cubic-bezier(0.2, 1, 0.3, 1) both;
   --animate-reveal-up: reveal-up 1s cubic-bezier(0.2, 1, 0.3, 1) both;
@@ -131,12 +135,56 @@
 }
 
 @layer base {
+  /* Optimization for large screens (TV, etc.) */
+  @media (min-width: 1920px) {
+    :root {
+      font-size: 18px;
+    }
+  }
+  @media (min-width: 2560px) {
+    :root {
+      font-size: 21px;
+    }
+  }
+  @media (min-width: 3840px) {
+    :root {
+      font-size: 24px;
+    }
+  }
+
   * {
     @apply border-border outline-ring/50;
   }
+  
+  /* Better focus visibility for TV/Remote navigation */
+  @media (min-width: 1920px) {
+    :focus-visible {
+      outline: 3px solid var(--accent) !important;
+      outline-offset: 4px;
+    }
+  }
+
   body {
     @apply bg-background text-foreground;
   }
+  
+  /* Large screen scrollbar */
+  @media (min-width: 1920px) {
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--background);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--accent);
+    }
+  }
+
   ::selection {
     background: var(--accent);
     color: var(--accent-foreground);

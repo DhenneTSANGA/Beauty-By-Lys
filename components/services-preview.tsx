@@ -7,21 +7,21 @@ const services = [
     title: "Beauté Femme",
     description:
       "Coiffures, tresses, perruques et styling pour sublimer votre allure au féminin.",
-    image: "/images/portrait.jpg",
+    image: "/images/beauty/femmes/36.png",
     price: "À partir de 10 000 FCFA",
   },
   {
     title: "Espace Homme",
     description:
       "Coupes précises, dégradés modernes et entretien de la barbe pour une élégance parfaite.",
-    image: "/images/service-detail.jpg",
+    image: "/images/beauty/hommes/103.png",
     price: "À partir de 5 000 FCFA",
   },
   {
     title: "Onglerie & Nail Art",
     description:
       "L'art de la pose, du design créatif et de l'entretien pour des mains sublimes.",
-    image: "/images/nails-1.jpg",
+    image: "/images/beauty/ongleries/7.png",
     price: "À partir de 15 000 FCFA",
   },
 ]

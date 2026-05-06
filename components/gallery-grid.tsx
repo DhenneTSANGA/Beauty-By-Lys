@@ -50,7 +50,7 @@ export function GalleryGrid() {
       </div>
 
       {/* Grid */}
-      <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5 lg:grid-cols-4">
+      <div className="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5 lg:grid-cols-4 3xl:grid-cols-5 4xl:grid-cols-6">
         {filtered.map((it, i) => (
           <button
             key={it.src + i}
