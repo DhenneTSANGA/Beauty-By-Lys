@@ -27,7 +27,7 @@ export default function HomePage() {
             </h1>
 
             <p className="animate-reveal-left delay-200 mt-7 max-w-md text-pretty leading-relaxed text-muted-foreground md:text-lg">
-              Beauty by Lys, votre destination prestige à Libreville pour la coiffure haute couture, 
+              Beauty by LYS, votre destination prestige à Libreville pour la coiffure haute couture, 
               l&apos;espace homme et l&apos;onglerie d&apos;exception.
             </p>
 
@@ -163,7 +163,7 @@ export default function HomePage() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <a
-              href="https://wa.me/24101234567"
+              href="https://wa.me/241066581458"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-foreground/20 px-8 py-4 text-xs font-medium uppercase tracking-[0.18em] transition-all hover:bg-foreground hover:text-background"

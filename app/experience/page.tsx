@@ -11,7 +11,7 @@ const categories = [
     intro:
       "Sublimez votre chevelure avec nos prestations de coiffure sur mesure. Des tresses aux perruques, nous créons le style qui vous ressemble.",
     items: [
-      { name: "Coiffures", price: "Sur devis" },
+      { name: "Coiffures", price: "30 000 FCFA" },
       { name: "Tresses", price: "À partir de 25 000 FCFA" },
       { name: "Perruques", price: "À partir de 15 000 FCFA" },
       { name: "Styling", price: "10 000 FCFA" },

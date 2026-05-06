@@ -111,7 +111,7 @@ export default function RealisationsPage() {
           <h1 className="animate-reveal-left delay-100 mt-5 max-w-5xl font-serif text-5xl leading-[0.95] tracking-tight text-balance md:text-8xl">
             L&apos;Art du Détail,
             <br />
-            <span className="italic text-accent">Signé Lys.</span>
+            <span className="italic text-accent">Signé LYS.</span>
           </h1>
           <p className="animate-reveal-left delay-200 mt-8 max-w-xl text-pretty leading-relaxed text-muted-foreground md:text-lg">
             Découvrez nos plus belles réalisations à Libreville. Trois univers dédiés à la beauté, 

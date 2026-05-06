@@ -32,12 +32,12 @@ export default function UniversPage() {
               — À propos
             </span>
             <h1 className="animate-reveal-left delay-100 mt-5 font-serif text-5xl leading-[0.95] tracking-tight text-balance md:text-8xl">
-              Beauty by Lys,
+              Beauty by LYS,
               <br />
               <span className="italic text-accent">une signature.</span>
             </h1>
             <p className="animate-reveal-left delay-200 mt-8 max-w-xl text-pretty leading-relaxed text-muted-foreground md:text-lg">
-              Beauty by Lys est née d&apos;une passion : celle de sublimer
+              Beauty by LYS est née d&apos;une passion : celle de sublimer
               les femmes et les hommes à Libreville. Un salon pensé comme un
               écrin de luxe, où la coiffure haute couture et l&apos;onglerie deviennent un art.
             </p>

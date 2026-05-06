@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Instagram, MapPin, Mail, Phone } from "lucide-react"
+import { Instagram, MapPin, Mail, Phone, Facebook } from "lucide-react"
 
 export function Footer() {
   return (
@@ -28,7 +28,16 @@ export function Footer() {
 
             <div className="mt-8 flex items-center gap-3">
               <a
-                href="https://instagram.com"
+                href="https://www.facebook.com/BEAUTYBYLYS/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Facebook"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border transition-colors hover:bg-foreground hover:text-background"
+              >
+                <Facebook className="h-4 w-4" />
+              </a>
+              <a
+                href="https://www.instagram.com/beauty_by_lys1/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Instagram"
@@ -37,7 +46,7 @@ export function Footer() {
                 <Instagram className="h-4 w-4" />
               </a>
               <a
-                href="https://tiktok.com"
+                href="https://www.tiktok.com/@beauty.by.lys"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="TikTok"
@@ -80,11 +89,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-                <a href="tel:+24101234567" className="hover:text-accent">+241 01 23 45 67</a>
-              </li>
-              <li className="flex items-start gap-3">
-                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-                <a href="mailto:contact@beautybylys.com" className="hover:text-accent">contact@beautybylys.com</a>
+                <a href="tel:+241066581458" className="hover:text-accent">+241 066 58 14 58</a>
               </li>
             </ul>
           </div>

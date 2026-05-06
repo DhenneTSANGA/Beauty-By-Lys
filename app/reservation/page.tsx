@@ -65,7 +65,7 @@ export default function ReservationPage() {
                   contactez-nous directement par WhatsApp.
                 </p>
                 <a
-                  href="https://wa.me/24101234567?text=Bonjour%20Beauty%20by%20Lys%2C%20je%20souhaite%20réserver%20un%20rendez-vous."
+                  href="https://wa.me/241066581458?text=Bonjour%20Beauty%20by%20Lys%2C%20je%20souhaite%20réserver%20un%20rendez-vous."
                   target="_blank"
                   rel="noreferrer"
                   className="mt-6 inline-flex items-center gap-3 rounded-full bg-foreground px-6 py-3.5 text-xs font-medium uppercase tracking-[0.18em] text-background transition-all hover:bg-accent"

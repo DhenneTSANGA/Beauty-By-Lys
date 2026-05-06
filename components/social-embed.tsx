@@ -1,11 +1,11 @@
 import Image from "next/image"
-import { Instagram, Play } from "lucide-react"
+import { Instagram, Play, Facebook } from "lucide-react"
 
 const reels = [
-  { src: "/images/nails-2.jpg", views: "127K" },
-  { src: "/images/nails-6.jpg", views: "89K" },
-  { src: "/images/nails-7.jpg", views: "203K" },
-  { src: "/images/nails-4.jpg", views: "56K" },
+  { src: "/images/beauty/femmes/hero4.png", views: "16.3k" },
+  { src: "/images/beauty/femmes/hero2.png", views: "37K" },
+  { src: "/images/beauty/femmes/hero3.png", views: "11K" },
+  { src: "/images/beauty/femmes/hero.png", views: "8K" },
 ]
 
 export function SocialEmbed() {
@@ -25,7 +25,16 @@ export function SocialEmbed() {
           </div>
           <div className="flex items-center gap-3">
             <a
-              href="https://instagram.com"
+              href="https://www.facebook.com/BEAUTYBYLYS/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-background/30 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.16em] transition-colors hover:bg-background hover:text-foreground"
+            >
+              <Facebook className="h-4 w-4" />
+              Facebook
+            </a>
+            <a
+              href="https://www.instagram.com/beauty_by_lys1/"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-background/30 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.16em] transition-colors hover:bg-background hover:text-foreground"
@@ -34,7 +43,7 @@ export function SocialEmbed() {
               Instagram
             </a>
             <a
-              href="https://tiktok.com"
+              href="https://www.tiktok.com/@beauty.by.lys"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-background/30 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.16em] transition-colors hover:bg-background hover:text-foreground"
@@ -51,7 +60,7 @@ export function SocialEmbed() {
           {reels.map((r, i) => (
             <a
               key={i}
-              href="https://tiktok.com"
+              href="https://tiktok.com/@beauty.by.lys"
               target="_blank"
               rel="noreferrer"
               className={`animate-reveal-up group relative aspect-[9/14] overflow-hidden rounded-xl ${

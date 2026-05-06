@@ -45,8 +45,8 @@ export default function ContactPage() {
               <InfoBlock
                 icon={Phone}
                 title="Téléphone"
-                lines={["+241 01 23 45 67"]}
-                href="tel:+24101234567"
+                lines={["+241 066 58 14 58"]}
+                href="tel:+241066581458"
               />
               <InfoBlock
                 icon={Mail}
