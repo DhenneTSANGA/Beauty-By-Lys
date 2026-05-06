@@ -5,7 +5,7 @@ import { RevealOnScroll } from "@/components/reveal-on-scroll"
 
 const categories = [
   {
-    title: "Beauté Femme",
+    title: "Espace Femme",
     icon: "👩‍🦱",
     image: "/images/beauty/femmes/30.png",
     intro:

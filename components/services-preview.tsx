@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react"
 
 const services = [
   {
-    title: "Beauté Femme",
+    title: "Espace Femme",
     description:
       "Coiffures, tresses, perruques et styling pour sublimer votre allure au féminin.",
     image: "/images/beauty/femmes/36.png",

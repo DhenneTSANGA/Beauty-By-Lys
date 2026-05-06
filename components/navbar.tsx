@@ -32,7 +32,7 @@ export function Navbar() {
         "sticky top-0 z-50 w-full transition-all duration-300",
         scrolled || open
           ? "bg-background/95 backdrop-blur-md border-b border-border/60"
-          : "bg-transparent max-lg:bg-background/60 max-lg:backdrop-blur-md",
+          : "bg-transparent max-lg:bg-background/95 max-lg:backdrop-blur-md",
       )}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:h-20 md:px-8">
@@ -101,7 +101,7 @@ export function Navbar() {
         />
         <aside
           className={cn(
-            "absolute right-0 top-0 h-full w-[85%] max-w-sm bg-background/98 backdrop-blur-2xl shadow-2xl transition-transform duration-300 ease-in-out",
+            "absolute right-0 top-0 h-full w-[85%] max-w-sm bg-background shadow-2xl transition-transform duration-300 ease-in-out",
             open ? "translate-x-0" : "translate-x-full",
           )}
         >

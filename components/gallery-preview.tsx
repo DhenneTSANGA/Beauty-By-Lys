@@ -6,7 +6,7 @@ const items = [
   { src: "/images/beauty/femmes/36.png", alt: "Coiffure de mariée" },
   { src: "/images/beauty/hommes/57.png", alt: "Coupe Homme" },
   { src: "/images/beauty/femmes/85.png", alt: "Lace frontale" },
-  { src: "/images/beauty/ongleries/97.png", alt: "Pose Nail Art" },
+  { src: "/images/beauty/ongleries/210.png", alt: "Chrome rose stiletto" },
   { src: "/images/beauty/ongleries/104.png", alt: "Ombre Nail Art" },
   { src: "/images/beauty/ongleries/105.png", alt: "Nail Art Prestige" },
   

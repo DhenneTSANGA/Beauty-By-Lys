@@ -52,10 +52,10 @@ export default function HomePage() {
                 {[1, 2, 3, 4].map((i) => (
                   <div
                     key={i}
-                    className="h-9 w-9 overflow-hidden rounded-full border-2 border-background bg-secondary"
+                    className="h-18 w-18 overflow-hidden rounded-full border-2 border-background bg-secondary"
                   >
                     <Image
-                      src={`/images/nails-${i}.jpg`}
+                      src={`/images/dhenne-${i}.png`}
                       alt=""
                       width={40}
                       height={40}
@@ -71,7 +71,7 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="mt-1 text-xs text-muted-foreground">
-                  +200 clientes conquises
+                  +500 clientes conquises
                 </p>
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function HomePage() {
                 muted
                 playsInline
                 className="h-full w-full object-cover transition-transform duration-1000 hover:scale-105"
-                poster="/images/portrait.jpg"
+                poster="/images/beauty/femmes/hero.png"
               >
                 <source src="/videos/hero.mp4" type="video/mp4" />
                 <Image

@@ -27,12 +27,12 @@ const realisationsHommes = [
 ]
 
 const realisationsOngleries = [
-  { src: "/images/beauty/ongleries/97.png", alt: "French gold accent" },
-  { src: "/images/beauty/ongleries/112.png", alt: "Chrome rose stiletto" },
-  { src: "/images/beauty/ongleries/41.png", alt: "French milky" },
-  { src: "/images/beauty/ongleries/7.png", alt: "Floral nail art" },
-  { src: "/images/beauty/ongleries/42.png", alt: "Rouge classique" },
-  { src: "/images/beauty/ongleries/96.png", alt: "Floral nail art" },
+  { src: "/images/beauty/ongleries/200.png", alt: "French gold accent" },
+  { src: "/images/beauty/ongleries/203.png", alt: "Chrome rose stiletto" },
+  { src: "/images/beauty/ongleries/206.png", alt: "French gold accent" },
+  { src: "/images/beauty/ongleries/207.png", alt: "French gold accent" },
+  { src: "/images/beauty/ongleries/8.png", alt: "French gold accent" },
+  { src: "/images/beauty/ongleries/210.png", alt: "Floral nail art" },
 ]
 
 function GallerySection({ 

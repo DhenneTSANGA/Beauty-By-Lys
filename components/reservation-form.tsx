@@ -4,10 +4,10 @@ import { useState } from "react"
 import { Check, Send } from "lucide-react"
 
 const services = [
-  "Beauté Femme — Coiffure",
-  "Beauté Femme — Tresses",
-  "Beauté Femme — Perruque",
-  "Beauté Femme — Styling",
+  "Espace Femme — Coiffure",
+  "Espace Femme — Tresses",
+  "Espace Femme — Perruque",
+  "Espace Femme — Styling",
   "Espace Homme — Coupe",
   "Espace Homme — Dégradé",
   "Espace Homme — Barbe",
