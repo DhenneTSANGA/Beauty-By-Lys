@@ -32,22 +32,33 @@ export default function HommesPage() {
     <div className="min-h-screen bg-background">
       <section className="bg-secondary/20">
         <div className="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
-          <Link 
-            href="/realisations#hommes"
-            className="group mb-8 inline-flex items-center gap-2 text-sm font-medium uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-foreground"
-          >
-            <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
-            Retour aux réalisations
-          </Link>
-          <h1 className="font-serif text-5xl md:text-7xl">Coiffures <span className="italic text-accent">Hommes</span></h1>
-          <p className="mt-6 max-w-xl text-muted-foreground">L&apos;excellence du service barbier. Découvrez nos coupes précises, dégradés impeccables et soins de la barbe.</p>
+          <RevealOnScroll animation="animate-reveal-left" once={false}>
+            <Link 
+              href="/realisations#hommes"
+              className="group mb-8 inline-flex items-center gap-2 text-sm font-medium uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-foreground"
+            >
+              <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />
+              Retour aux réalisations
+            </Link>
+          </RevealOnScroll>
+          <RevealOnScroll animation="animate-reveal-left" delay="delay-100" once={false}>
+            <h1 className="font-serif text-5xl md:text-7xl">Coiffures <span className="italic text-accent">Hommes</span></h1>
+          </RevealOnScroll>
+          <RevealOnScroll animation="animate-reveal-left" delay="delay-200" once={false}>
+            <p className="mt-6 max-w-xl text-muted-foreground">L&apos;excellence du service barbier. Découvrez nos coupes précises, dégradés impeccables et soins de la barbe.</p>
+          </RevealOnScroll>
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
         <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
           {images.map((item, i) => (
-            <RevealOnScroll key={i} animation="animate-reveal-up" delay={i * 50}>
+            <RevealOnScroll 
+              key={i} 
+              animation={i % 2 === 0 ? "animate-reveal-left" : "animate-reveal-right"} 
+              delay={`delay-${(i % 4) * 100}`}
+              once={false}
+            >
               <button 
                 onClick={() => setActiveImage(item.src)}
                 className="group relative aspect-[3/4] w-full overflow-hidden rounded-2xl bg-secondary shadow-md transition-all hover:shadow-xl"

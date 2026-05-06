@@ -6,12 +6,16 @@ export function RevealOnScroll({
   children, 
   animation = "animate-reveal-up",
   delay = "",
-  className = "" 
+  className = "",
+  threshold = 0.1,
+  once = false // Si false, l'animation se répète à chaque passage
 }: { 
   children: React.ReactNode, 
   animation?: string,
   delay?: string,
-  className?: string 
+  className?: string,
+  threshold?: number,
+  once?: boolean
 }) {
   const [isVisible, setIsVisible] = useState(false)
   const [ref, setRef] = useState<HTMLElement | null>(null)
@@ -23,20 +27,22 @@ export function RevealOnScroll({
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true)
-          observer.unobserve(entry.target)
+          if (once) observer.unobserve(entry.target)
+        } else if (!once) {
+          setIsVisible(false)
         }
       },
-      { threshold: 0.1 }
+      { threshold }
     )
 
     observer.observe(ref)
     return () => observer.disconnect()
-  }, [ref])
+  }, [ref, once, threshold])
 
   return (
     <div
       ref={setRef}
-      className={`${className} ${isVisible ? `${animation} ${delay}` : "opacity-0"}`}
+      className={`${className} transition-opacity duration-500 ${isVisible ? `${animation} ${delay}` : "opacity-0"}`}
     >
       {children}
     </div>

@@ -13,39 +13,47 @@ export default function HomePage() {
       <section className="relative overflow-hidden">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 pt-10 pb-16 md:px-8 md:pt-16 md:pb-24 lg:grid-cols-12 lg:gap-16">
           <div className="flex flex-col justify-center lg:col-span-6">
-            <span className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-secondary/40 px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-              <Sparkles className="h-3 w-3 text-accent" />
-              Salon premium · Libreville
-            </span>
+            <RevealOnScroll animation="animate-reveal-left" once={false}>
+              <span className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-secondary/40 px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-muted-foreground">
+                <Sparkles className="h-3 w-3 text-accent" />
+                Salon premium · Libreville
+              </span>
+            </RevealOnScroll>
 
-            <h1 className="animate-reveal-left mt-6 font-serif text-5xl leading-[0.95] tracking-tight text-balance md:text-7xl lg:text-[5.5rem]">
-              L&apos;art de
-              <br />
-              <span className="italic text-accent">vous sublimer</span>
-              <br />
-              en beauté.
-            </h1>
+            <RevealOnScroll animation="animate-reveal-left" delay="delay-100" once={false}>
+              <h1 className="mt-6 font-serif text-5xl leading-[0.95] tracking-tight text-balance md:text-7xl lg:text-[5.5rem]">
+                L&apos;art de
+                <br />
+                <span className="italic text-accent">vous sublimer</span>
+                <br />
+                en beauté.
+              </h1>
+            </RevealOnScroll>
 
-            <p className="animate-reveal-left delay-200 mt-7 max-w-md text-pretty leading-relaxed text-muted-foreground md:text-lg">
-              Beauty by LYS, votre destination prestige à Libreville pour la coiffure haute couture, 
-              l&apos;espace homme et l&apos;onglerie d&apos;exception.
-            </p>
+            <RevealOnScroll animation="animate-reveal-left" delay="delay-200" once={false}>
+              <p className="mt-7 max-w-md text-pretty leading-relaxed text-muted-foreground md:text-lg">
+                Beauty by LYS, votre destination prestige à Libreville pour la coiffure haute couture, 
+                l&apos;espace homme et l&apos;onglerie d&apos;exception.
+              </p>
+            </RevealOnScroll>
 
-            <div className="animate-reveal-up delay-300 mt-10 flex flex-wrap items-center gap-4">
-              <Link
-                href="/reservation"
-                className="group inline-flex items-center gap-3 rounded-full bg-foreground px-7 py-4 text-xs font-medium uppercase tracking-[0.18em] text-background transition-all hover:bg-accent"
-              >
-                Réserver votre séance
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Link>
-              <Link
-                href="/realisations"
-                className="text-sm font-medium underline decoration-accent decoration-2 underline-offset-8 transition-colors hover:text-accent"
-              >
-                Voir plus
-              </Link>
-            </div>
+            <RevealOnScroll animation="animate-reveal-up" delay="delay-300" once={false}>
+              <div className="mt-10 flex flex-wrap items-center gap-4">
+                <Link
+                  href="/reservation"
+                  className="group inline-flex items-center gap-3 rounded-full bg-foreground px-7 py-4 text-xs font-medium uppercase tracking-[0.18em] text-background transition-all hover:bg-accent shimmer-btn"
+                >
+                  Réserver votre séance
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+                <Link
+                  href="/realisations"
+                  className="text-sm font-medium underline decoration-accent decoration-2 underline-offset-8 transition-colors hover:text-accent"
+                >
+                  Voir plus
+                </Link>
+              </div>
+            </RevealOnScroll>
 
             <div className="mt-12 flex items-center gap-6 border-t border-border pt-8">
               <div className="flex -space-x-2">
@@ -77,28 +85,30 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="animate-zoom-in delay-500 relative lg:col-span-6">
-            <div className="relative aspect-[4/4.5] overflow-hidden rounded-[2rem] bg-secondary md:rounded-[2.5rem]">
-              {/* Remplacer src="/videos/hero.mp4" par le chemin de votre vidéo une fois ajoutée */}
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="h-full w-full object-cover transition-transform duration-1000 hover:scale-105"
-                poster="/images/beauty/femmes/hero.png"
-              >
-                <source src="/videos/hero.mp4" type="video/mp4" />
-                <Image
-                  src="/images/portrait.jpg"
-                  alt="Coiffure élégante Beauty by Lys"
-                  fill
-                  priority
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-              </video>
-            </div>
+          <div className="relative lg:col-span-6">
+            <RevealOnScroll animation="animate-zoom-in" once={false}>
+              <div className="relative aspect-[4/4.5] overflow-hidden rounded-[2rem] bg-secondary md:rounded-[2.5rem]">
+                {/* Remplacer src="/videos/hero.mp4" par le chemin de votre vidéo une fois ajoutée */}
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="h-full w-full object-cover transition-transform duration-1000 hover:scale-105"
+                  poster="/images/beauty/femmes/hero.png"
+                >
+                  <source src="/videos/hero.mp4" type="video/mp4" />
+                  <Image
+                    src="/images/portrait.jpg"
+                    alt="Coiffure élégante Beauty by Lys"
+                    fill
+                    priority
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                </video>
+              </div>
+            </RevealOnScroll>
             {/* Floating accent card */}
             <div className="absolute -bottom-6 -left-4 hidden max-w-[220px] rounded-2xl bg-background p-5 shadow-xl shadow-foreground/10 md:block">
               <p className="font-serif text-2xl italic leading-tight">
@@ -134,17 +144,17 @@ export default function HomePage() {
 
       <ServicesPreview />
       
-      <RevealOnScroll animation="animate-zoom-in">
+      <RevealOnScroll animation="animate-zoom-in" once={false}>
         <GalleryPreview />
       </RevealOnScroll>
       
-      <RevealOnScroll animation="animate-reveal-up">
+      <RevealOnScroll animation="animate-reveal-up" once={false}>
         <Testimonials />
       </RevealOnScroll>
 
       {/* FINAL CTA */}
       <section className="relative overflow-hidden bg-secondary/40 py-20 md:py-28">
-        <RevealOnScroll className="mx-auto max-w-4xl px-5 text-center md:px-8">
+        <RevealOnScroll className="mx-auto max-w-4xl px-5 text-center md:px-8" once={false}>
           <h2 className="font-serif text-4xl leading-tight text-balance md:text-6xl">
             Prête à briller&nbsp;?
             <br />
@@ -157,7 +167,7 @@ export default function HomePage() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/reservation"
-              className="group inline-flex items-center gap-3 rounded-full bg-foreground px-8 py-4 text-xs font-medium uppercase tracking-[0.18em] text-background transition-all hover:bg-accent"
+              className="group inline-flex items-center gap-3 rounded-full bg-foreground px-8 py-4 text-xs font-medium uppercase tracking-[0.18em] text-background transition-all hover:bg-accent shimmer-btn"
             >
               Prendre rendez-vous
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

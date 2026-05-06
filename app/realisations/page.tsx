@@ -59,7 +59,12 @@ function GallerySection({
       
       <div className="grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-6 lg:grid-cols-3 3xl:grid-cols-4 4xl:grid-cols-6">
         {items.map((item, i) => (
-          <RevealOnScroll key={i} animation="animate-reveal-up" delay={i * 100}>
+          <RevealOnScroll 
+            key={i} 
+            animation={i % 2 === 0 ? "animate-reveal-left" : "animate-reveal-right"} 
+            delay={`delay-${(i % 3) * 100}`}
+            once={false}
+          >
             <button 
               onClick={() => onImageClick(item.src)}
               className="group relative aspect-[3/4] w-full overflow-hidden rounded-2xl bg-secondary shadow-md transition-all hover:shadow-xl"
@@ -105,18 +110,24 @@ export default function RealisationsPage() {
     <>
       <section className="bg-secondary/20">
         <div className="mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-24">
-          <span className="animate-reveal-left text-xs uppercase tracking-[0.22em] text-muted-foreground">
-            — Galerie d&apos;Excellence
-          </span>
-          <h1 className="animate-reveal-left delay-100 mt-5 max-w-5xl font-serif text-5xl leading-[0.95] tracking-tight text-balance md:text-8xl">
-            L&apos;Art du Détail,
-            <br />
-            <span className="italic text-accent">Signé LYS.</span>
-          </h1>
-          <p className="animate-reveal-left delay-200 mt-8 max-w-xl text-pretty leading-relaxed text-muted-foreground md:text-lg">
-            Découvrez nos plus belles réalisations à Libreville. Trois univers dédiés à la beauté, 
-            à l&apos;élégance et au soin de soi.
-          </p>
+          <RevealOnScroll animation="animate-reveal-left" once={false}>
+            <span className="text-xs uppercase tracking-[0.22em] text-muted-foreground">
+              — Galerie d&apos;Excellence
+            </span>
+          </RevealOnScroll>
+          <RevealOnScroll animation="animate-reveal-left" delay="delay-100" once={false}>
+            <h1 className="mt-5 max-w-5xl font-serif text-5xl leading-[0.95] tracking-tight text-balance md:text-8xl">
+              L&apos;Art du Détail,
+              <br />
+              <span className="italic text-accent">Signé LYS.</span>
+            </h1>
+          </RevealOnScroll>
+          <RevealOnScroll animation="animate-reveal-left" delay="delay-200" once={false}>
+            <p className="mt-8 max-w-xl text-pretty leading-relaxed text-muted-foreground md:text-lg">
+              Découvrez nos plus belles réalisations à Libreville. Trois univers dédiés à la beauté, 
+              à l&apos;élégance et au soin de soi.
+            </p>
+          </RevealOnScroll>
         </div>
       </section>
 
