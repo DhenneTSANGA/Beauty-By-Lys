@@ -27,67 +27,69 @@ export function Navbar() {
   }, [])
 
   return (
-    <header
-      className={cn(
-        "sticky top-0 z-50 w-full transition-all duration-300",
-        scrolled || open
-          ? "bg-background/95 backdrop-blur-md border-b border-border/60"
-          : "bg-transparent max-lg:bg-background/95 max-lg:backdrop-blur-md",
-      )}
-    >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:h-20 md:px-8">
-        <Link
-          href="/"
-          className="group flex items-center gap-3"
-          aria-label="Beauty by Lys — Accueil"
-        >
-          <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg md:h-12 md:w-12">
-            <Image
-              src="/images/logo.png"
-              alt="Logo Beauty by Lys"
-              fill
-              className="object-cover"
-            />
-          </div>
-          <span className="font-serif text-xl italic tracking-tight md:text-2xl">
-            Beauty <span className="text-accent">by Lys</span>
-          </span>
-        </Link>
-
-        <nav className="hidden items-center gap-8 lg:flex" aria-label="Navigation principale">
-          {links.slice(0, -1).map((l) => (
-            <Link
-              key={l.href}
-              href={l.href}
-              className="font-serif text-xl font-medium italic tracking-tight text-foreground/80 transition-colors hover:text-foreground"
-            >
-              {l.label}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="flex items-center gap-3">
+    <>
+      <header
+        className={cn(
+          "sticky top-0 z-50 w-full transition-all duration-300",
+          scrolled || open
+            ? "bg-background/95 backdrop-blur-md border-b border-border/60"
+            : "bg-transparent max-lg:bg-background/95 max-lg:backdrop-blur-md",
+        )}
+      >
+        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:h-20 md:px-8">
           <Link
-            href="/reservation"
-            className="hidden rounded-full bg-foreground px-5 py-2.5 text-xs font-medium uppercase tracking-[0.15em] text-background transition-all hover:bg-accent hover:text-accent-foreground md:inline-flex"
+            href="/"
+            className="group flex items-center gap-3"
+            aria-label="Beauty by Lys — Accueil"
           >
-            Réserver
+            <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg md:h-12 md:w-12">
+              <Image
+                src="/images/logo.png"
+                alt="Logo Beauty by Lys"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <span className="font-serif text-xl italic tracking-tight md:text-2xl">
+              Beauty <span className="text-accent">by Lys</span>
+            </span>
           </Link>
-          <button
-            type="button"
-            onClick={() => setOpen(true)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border lg:hidden"
-            aria-label="Ouvrir le menu"
-          >
-            <Menu className="h-5 w-5" />
-          </button>
-        </div>
-      </div>
 
-      {/* Mobile drawer */}
+          <nav className="hidden items-center gap-8 lg:flex" aria-label="Navigation principale">
+            {links.slice(0, -1).map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="font-serif text-xl font-medium italic tracking-tight text-foreground/80 transition-colors hover:text-foreground"
+              >
+                {l.label}
+              </Link>
+            ))}
+          </nav>
+
+          <div className="flex items-center gap-3">
+            <Link
+              href="/reservation"
+              className="hidden rounded-full bg-foreground px-5 py-2.5 text-xs font-medium uppercase tracking-[0.15em] text-background transition-all hover:bg-accent hover:text-accent-foreground md:inline-flex"
+            >
+              Réserver
+            </Link>
+            <button
+              type="button"
+              onClick={() => setOpen(true)}
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border lg:hidden"
+              aria-label="Ouvrir le menu"
+            >
+              <Menu className="h-5 w-5" />
+            </button>
+          </div>
+        </div>
+      </header>
+
+      {/* Mobile drawer - moved outside header to prevent stacking context/blur issues on Android */}
       <div
         className={cn(
-          "fixed inset-0 z-50 lg:hidden",
+          "fixed inset-0 z-[100] lg:hidden",
           open ? "pointer-events-auto" : "pointer-events-none",
         )}
         aria-hidden={!open}
@@ -149,6 +151,6 @@ export function Navbar() {
           </nav>
         </aside>
       </div>
-    </header>
+    </>
   )
 }
