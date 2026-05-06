@@ -60,6 +60,8 @@ export default function RootLayout({
     >
       <body className="font-sans antialiased text-foreground">
         <Navbar />
+        {/* Spacer to account for fixed navbar height */}
+        <div className="h-16 md:h-20" />
         <main className="min-h-screen overflow-x-hidden">{children}</main>
         <Footer />
         <WhatsAppButton />

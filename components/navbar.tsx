@@ -30,7 +30,7 @@ export function Navbar() {
     <>
       <header
         className={cn(
-          "sticky top-0 z-50 w-full transition-all duration-300",
+          "fixed top-0 z-50 w-full transition-all duration-300",
           scrolled || open
             ? "bg-background/95 backdrop-blur-md border-b border-border/60"
             : "bg-transparent max-lg:bg-background/95 max-lg:backdrop-blur-md",
