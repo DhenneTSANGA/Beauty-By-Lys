@@ -7,16 +7,22 @@ import { X, ArrowLeft, Plus } from "lucide-react"
 import { RevealOnScroll } from "@/components/reveal-on-scroll"
 
 const images = [
-  { src: "/images/salon-interior.jpg", alt: "Dégradé à blanc" },
-  { src: "/images/portrait.jpg", alt: "Taille de barbe" },
-  { src: "/images/service-detail.jpg", alt: "Coupe classique" },
-  { src: "/images/nails-4.jpg", alt: "Contour parfait" },
-  { src: "/images/nails-5.jpg", alt: "Soin visage homme" },
-  { src: "/images/nails-6.jpg", alt: "Motif artistique" },
-  { src: "/images/nails-7.jpg", alt: "Barbe Sculptée" },
-  { src: "/images/nails-8.jpg", alt: "Coupe au rasoir" },
-  { src: "/images/nails-1.jpg", alt: "Entretien barbe" },
-  { src: "/images/nails-2.jpg", alt: "Coupe moderne" },
+  { src: "/images/beauty/hommes/50.png", alt: "Dégradé à blanc" },
+  { src: "/images/beauty/hommes/58.png", alt: "Taille de barbe" },
+  { src: "/images/beauty/hommes/107.png", alt: "Coupe classique" },
+  { src: "/images/beauty/hommes/74.png", alt: "Contour parfait" },
+  { src: "/images/beauty/hommes/24.png", alt: "Soin visage homme" },
+  { src: "/images/beauty/hommes/47.png", alt: "Motif artistique" },
+  { src: "/images/beauty/hommes/104.png", alt: "Coupe au carré" },
+  { src: "/images/beauty/hommes/66.png", alt: "Mèches et balayage" },
+  { src: "/images/beauty/hommes/68.png", alt: "Soin visage homme" },
+  { src: "/images/beauty/hommes/51.png", alt: "Motif artistique" },
+  { src: "/images/beauty/hommes/55.png", alt: "Soin visage homme" },
+  { src: "/images/beauty/hommes/114.png", alt: "Motif artistique" },
+  { src: "/images/beauty/hommes/56.png", alt: "Soin visage homme" },
+  { src: "/images/beauty/hommes/101.png", alt: "Motif artistique" },
+  { src: "/images/beauty/hommes/57.png", alt: "Soin visage homme" },
+  { src: "/images/beauty/hommes/53.png", alt: "Motif artistique" },
 ]
 
 export default function HommesPage() {
@@ -27,7 +33,7 @@ export default function HommesPage() {
       <section className="bg-secondary/20">
         <div className="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
           <Link 
-            href="/realisations"
+            href="/realisations#hommes"
             className="group mb-8 inline-flex items-center gap-2 text-sm font-medium uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-foreground"
           >
             <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />

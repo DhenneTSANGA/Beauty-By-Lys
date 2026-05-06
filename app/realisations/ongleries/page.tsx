@@ -7,16 +7,14 @@ import { X, ArrowLeft, Plus } from "lucide-react"
 import { RevealOnScroll } from "@/components/reveal-on-scroll"
 
 const images = [
-  { src: "/images/nails-1.jpg", alt: "French gold accent" },
-  { src: "/images/nails-2.jpg", alt: "Chrome rose stiletto" },
-  { src: "/images/nails-3.jpg", alt: "French milky" },
-  { src: "/images/nails-4.jpg", alt: "Floral nail art" },
-  { src: "/images/nails-5.jpg", alt: "Rouge classique" },
-  { src: "/images/nails-6.jpg", alt: "Glass holographique" },
-  { src: "/images/nails-7.jpg", alt: "Baby Boomer" },
-  { src: "/images/nails-8.jpg", alt: "Strass & Paillettes" },
-  { src: "/images/hero-nails.jpg", alt: "Nail Art Prestige" },
-  { src: "/images/service-detail.jpg", alt: "Soin des mains" },
+  { src: "/images/beauty/ongleries/8.png", alt: "French gold accent" },
+  { src: "/images/beauty/ongleries/112.png", alt: "Chrome rose stiletto" },
+  { src: "/images/beauty/ongleries/41.png", alt: "French milky" },
+  { src: "/images/beauty/ongleries/7.png", alt: "Floral nail art" },
+  { src: "/images/beauty/ongleries/42.png", alt: "Rouge classique" },
+  { src: "/images/beauty/ongleries/96.png", alt: "Floral nail art" },
+  { src: "/images/beauty/ongleries/6.png", alt: "Nail Art Prestige" },
+  { src: "/images/beauty/ongleries/97.png", alt: "French gold accent" },
 ]
 
 export default function OngleriesPage() {
@@ -27,7 +25,7 @@ export default function OngleriesPage() {
       <section className="bg-secondary/20">
         <div className="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
           <Link 
-            href="/realisations"
+            href="/realisations#ongleries"
             className="group mb-8 inline-flex items-center gap-2 text-sm font-medium uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-foreground"
           >
             <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />

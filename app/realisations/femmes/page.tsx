@@ -7,16 +7,22 @@ import { X, ArrowLeft, Plus } from "lucide-react"
 import { RevealOnScroll } from "@/components/reveal-on-scroll"
 
 const images = [
-  { src: "/images/portrait.jpg", alt: "Tresses Signature" },
-  { src: "/images/hero-nails.jpg", alt: "Coiffure de mariée" },
-  { src: "/images/service-detail.jpg", alt: "Chignon sophistiqué" },
-  { src: "/images/nails-1.jpg", alt: "Tresses bohèmes" },
-  { src: "/images/nails-2.jpg", alt: "Coupe au carré" },
-  { src: "/images/nails-3.jpg", alt: "Mèches et balayage" },
-  { src: "/images/nails-4.jpg", alt: "Tissage Premium" },
-  { src: "/images/nails-5.jpg", alt: "Coiffure Afro-Chic" },
-  { src: "/images/nails-6.jpg", alt: "Tresses Africaines" },
-  { src: "/images/nails-7.jpg", alt: "Coupe de soirée" },
+  { src: "/images/beauty/femmes/31.png", alt: "Lace longue lisse" },
+  { src: "/images/beauty/femmes/32.png", alt: "Lace longue ondulée" },
+  { src: "/images/beauty/femmes/34.png", alt: "Lace courte bouclée" },
+  { src: "/images/beauty/femmes/64.png", alt: "Lace courte lisse" },
+  { src: "/images/beauty/femmes/65.png", alt: "Lace courte ondulée" },
+  { src: "/images/beauty/femmes/76.png", alt: "Lace courte bouclée" },
+  { src: "/images/beauty/femmes/80.png", alt: "Lace bouclée" },
+  { src: "/images/beauty/femmes/81.png", alt: "Perruque longue" },
+  { src: "/images/beauty/femmes/88.png", alt: "Perruque courte" },
+  { src: "/images/beauty/femmes/89.png", alt: "Perruque bouclée" },
+  { src: "/images/beauty/femmes/111.png", alt: "tresses longues" },
+  { src: "/images/beauty/femmes/108.png", alt: "Lace lisse" },
+  { src: "/images/beauty/femmes/43.png", alt: "Coiffure afro" },
+  { src: "/images/beauty/femmes/4.png", alt: "Coiffure afro" },
+  { src: "/images/beauty/femmes/16.png", alt: "Coiffure afro" },
+  { src: "/images/beauty/femmes/46.png", alt: "Coiffure afro" },
 ]
 
 export default function FemmesPage() {
@@ -27,7 +33,7 @@ export default function FemmesPage() {
       <section className="bg-secondary/20">
         <div className="mx-auto max-w-7xl px-5 py-12 md:px-8 md:py-20">
           <Link 
-            href="/realisations"
+            href="/realisations#femmes"
             className="group mb-8 inline-flex items-center gap-2 text-sm font-medium uppercase tracking-[0.18em] text-muted-foreground transition-colors hover:text-foreground"
           >
             <ArrowLeft className="h-4 w-4 transition-transform group-hover:-translate-x-1" />

@@ -27,7 +27,7 @@ export default function UniversPage() {
       {/* HERO */}
       <section className="border-b border-border">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 md:grid-cols-12 md:gap-16 md:px-8 md:py-24">
-          <div className="md:col-span-7">
+          <div className="md:col-span-6">
             <span className="animate-reveal-left text-xs uppercase tracking-[0.22em] text-muted-foreground">
               — À propos
             </span>
@@ -42,15 +42,16 @@ export default function UniversPage() {
               écrin de luxe, où la coiffure haute couture et l&apos;onglerie deviennent un art.
             </p>
           </div>
-          <div className="animate-zoom-in delay-300 relative aspect-[4/5] overflow-hidden rounded-2xl md:col-span-5">
-            <Image
-              src="/images/portrait.jpg"
-              alt="Portrait de Lys, fondatrice"
-              fill
-              priority
-              className="object-cover transition-transform duration-1000 hover:scale-105"
-              sizes="(max-width: 768px) 100vw, 40vw"
-            />
+          <div className="animate-zoom-in delay-300 relative aspect-[4/4] overflow-hidden rounded-2xl md:col-span-6">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="h-full w-full object-cover transition-transform duration-1000 hover:scale-105"
+            >
+              <source src="/videos/about.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </section>

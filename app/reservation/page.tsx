@@ -48,7 +48,7 @@ export default function ReservationPage() {
             <div className="sticky top-24 overflow-hidden rounded-2xl border border-border bg-card">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
-                  src="/images/service-detail.jpg"
+                  src="/images/beauty/femmes/113.png"
                   alt=""
                   fill
                   className="object-cover transition-transform duration-1000 hover:scale-105"

@@ -78,7 +78,7 @@ export default function HomePage() {
           </div>
 
           <div className="animate-zoom-in delay-500 relative lg:col-span-6">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-secondary md:rounded-[2.5rem]">
+            <div className="relative aspect-[4/4.5] overflow-hidden rounded-[2rem] bg-secondary md:rounded-[2.5rem]">
               {/* Remplacer src="/videos/hero.mp4" par le chemin de votre vidéo une fois ajoutée */}
               <video
                 autoPlay

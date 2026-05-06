@@ -13,8 +13,8 @@ const realisationsFemmes = [
   { src: "/images/beauty/femmes/82.png", alt: "Coiffure de mariée" },
   { src: "/images/beauty/femmes/98.png", alt: "Chignon sophistiqué" },
   { src: "/images/beauty/femmes/79.png", alt: "Tresses bohèmes" },
-  { src: "/images/beauty/femmes/3.png", alt: "Coupe au carré" },
-  { src: "/images/beauty/femmes/43.png", alt: "Mèches et balayage" },
+  { src: "/images/beauty/femmes/20.png", alt: "Coupe au carré" },
+  { src: "/images/beauty/femmes/25.png", alt: "Mèches et balayage" },
 ]
 
 const realisationsHommes = [
@@ -120,37 +120,43 @@ export default function RealisationsPage() {
         </div>
       </section>
 
-      <GallerySection 
-        title="Coiffures pour Femmes" 
-        subtitle="De la coiffure haute couture aux tresses protectrices, sublimez votre féminité."
-        items={realisationsFemmes}
-        link="/realisations/femmes"
-        onImageClick={setActiveImage}
-      />
+      <div id="femmes" className="scroll-mt-24">
+        <GallerySection 
+          title="Coiffures pour Femmes" 
+          subtitle="De la coiffure haute couture aux tresses protectrices, sublimez votre féminité."
+          items={realisationsFemmes}
+          link="/realisations/femmes"
+          onImageClick={setActiveImage}
+        />
+      </div>
       
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <hr className="border-border" />
       </div>
 
-      <GallerySection 
-        title="Coiffures pour Hommes" 
-        subtitle="L'expertise Barbier au service de votre style. Coupes précises et soins sur mesure."
-        items={realisationsHommes}
-        link="/realisations/hommes"
-        onImageClick={setActiveImage}
-      />
+      <div id="hommes" className="scroll-mt-24">
+        <GallerySection 
+          title="Coiffures pour Hommes" 
+          subtitle="L'expertise Barbier au service de votre style. Coupes précises et soins sur mesure."
+          items={realisationsHommes}
+          link="/realisations/hommes"
+          onImageClick={setActiveImage}
+        />
+      </div>
 
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <hr className="border-border" />
       </div>
 
-      <GallerySection 
-        title="Ongleries" 
-        subtitle="Nail art d'exception, manucure et pédicure pour des mains et des pieds parfaits."
-        items={realisationsOngleries}
-        link="/realisations/ongleries"
-        onImageClick={setActiveImage}
-      />
+      <div id="ongleries" className="scroll-mt-24">
+        <GallerySection 
+          title="Ongleries" 
+          subtitle="Nail art d'exception, manucure et pédicure pour des mains et des pieds parfaits."
+          items={realisationsOngleries}
+          link="/realisations/ongleries"
+          onImageClick={setActiveImage}
+        />
+      </div>
 
       <div className="mb-20">
         <SocialEmbed />
