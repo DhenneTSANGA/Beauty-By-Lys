@@ -6,7 +6,7 @@ import { RevealOnScroll } from "@/components/reveal-on-scroll"
 const categories = [
   {
     title: "Espace Femme",
-    icon: "👩‍🦱",
+    icon: "👩🏾‍🦱",
     image: "/images/beauty/femmes/30.png",
     intro:
       "Sublimez votre chevelure avec nos prestations de coiffure sur mesure. Des tresses aux perruques, nous créons le style qui vous ressemble.",
@@ -19,7 +19,7 @@ const categories = [
   },
   {
     title: "Espace Homme",
-    icon: "👨‍🦱",
+    icon: "👨🏾‍🦱",
     image: "/images/beauty/hommes/38.png",
     intro:
       "Un espace dédié à la précision et au style masculin. Profitez d'un moment de soin expert pour vos cheveux et votre barbe.",
@@ -31,7 +31,7 @@ const categories = [
   },
   {
     title: "Onglerie & Nail Art",
-    icon: "💅",
+    icon: "💅🏾",
     image: "/images/beauty/ongleries/7.png",
     intro:
       "L'excellence du détail pour vos mains. De la pose structurelle au nail art le plus créatif, confiez-nous vos envies.",
