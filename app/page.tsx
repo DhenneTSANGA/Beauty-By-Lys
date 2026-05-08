@@ -85,8 +85,8 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="relative lg:col-span-6">
-            <RevealOnScroll animation="animate-zoom-in" once={false} className="mx-auto w-full max-w-[500px] lg:max-w-none">
+          <div className="relative flex flex-col items-center lg:block lg:col-span-6">
+            <RevealOnScroll animation="animate-zoom-in" once={false} className="w-full max-w-[500px] lg:max-w-none">
               <div className="relative aspect-[4/4.5] overflow-hidden rounded-[2rem] bg-secondary md:rounded-[2.5rem]">
                 {/* Remplacer src="/videos/hero.mp4" par le chemin de votre vidéo une fois ajoutée */}
                 <video
