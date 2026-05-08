@@ -8,7 +8,7 @@ import Image from "next/image"
 export function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false)
 
-  const whatsappNumber = "24176584155"
+  const whatsappNumber = "24166581458"
   const message = "Bonjour Beauty by Lys, je souhaiterais obtenir des informations sur vos prestations."
 
   return (
