@@ -11,10 +11,10 @@ export default function HomePage() {
     <>
       {/* HERO */}
       <section className="relative overflow-hidden">
-        <div className="mx-auto grid max-w-7xl gap-10 px-5 pt-10 pb-16 md:px-8 md:pt-16 md:pb-24 lg:grid-cols-12 lg:gap-16">
-          <div className="flex flex-col justify-center lg:col-span-6">
+        <div className="mx-auto grid max-w-7xl gap-10 pt-10 pb-16 md:px-8 md:pt-16 md:pb-24 lg:grid-cols-12 lg:gap-16">
+          <div className="flex flex-col justify-center px-5 lg:col-span-6 lg:px-0">
             <RevealOnScroll animation="animate-reveal-left" once={false}>
-              <span className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-secondary/40 px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-muted-foreground">
+              <span className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-secondary/40 px-4 py-1.5 text-xs uppercase tracking-[0.22em] text-muted-foreground">
                 <Sparkles className="h-3 w-3 text-accent" />
                 Salon premium · Libreville
               </span>
@@ -60,13 +60,13 @@ export default function HomePage() {
                 {[1, 2, 3, 4].map((i) => (
                   <div
                     key={i}
-                    className="h-18 w-18 overflow-hidden rounded-full border-2 border-background bg-secondary"
+                    className="h-14 w-14 overflow-hidden rounded-full border-2 border-background bg-secondary"
                   >
                     <Image
                       src={`/images/dhenne-${i}.png`}
                       alt=""
-                      width={40}
-                      height={40}
+                      width={56}
+                      height={56}
                       className="h-full w-full object-cover"
                     />
                   </div>
@@ -85,8 +85,8 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="relative flex flex-col items-center lg:block lg:col-span-6">
-            <RevealOnScroll animation="animate-zoom-in" once={false} className="w-full max-w-[500px] lg:max-w-none">
+          <div className="relative px-5 lg:col-span-6 lg:px-0">
+            <RevealOnScroll animation="animate-zoom-in" once={false} className="mx-auto w-full max-w-[500px] lg:max-w-none">
               <div className="relative aspect-[4/4.5] overflow-hidden rounded-[2rem] bg-secondary md:rounded-[2.5rem]">
                 {/* Remplacer src="/videos/hero.mp4" par le chemin de votre vidéo une fois ajoutée */}
                 <video
