@@ -26,8 +26,8 @@ export function WhatsAppButton() {
               <div className="flex items-center gap-3">
                 <div className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-white/20 bg-white">
                   <Image
-                    src="/images/logo.png"
-                    alt="Beauty by Lys Logo"
+                    src="/vitrine.png"
+                    alt="Vitrine du Glam Logo"
                     fill
                     className="object-cover"
                   />

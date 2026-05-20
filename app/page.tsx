@@ -21,19 +21,15 @@ export default function HomePage() {
             </RevealOnScroll>
 
             <RevealOnScroll animation="animate-reveal-left" delay="delay-100" once={false}>
-              <h1 className="mt-6 font-serif text-4xl leading-[0.95] tracking-tight text-balance md:text-7xl lg:text-[5.5rem]">
-                L&apos;art de
-                <br />
-                <span className="italic text-accent">vous sublimer</span>
-                <br />
-                en beauté.
+              <h1 className="mt-6 font-serif text-4xl leading-[1.05] tracking-tight text-balance md:text-7xl lg:text-[5.5rem]">
+                Révélez votre <span className="italic text-accent">beauté</span> avec des coiffures élégantes.
               </h1>
             </RevealOnScroll>
 
             <RevealOnScroll animation="animate-reveal-left" delay="delay-200" once={false}>
-              <p className="mt-7 max-w-md text-pretty leading-relaxed text-muted-foreground md:text-lg">
-                Beauty by LYS, votre destination prestige à Libreville pour la coiffure haute couture, 
-                l&apos;espace homme et l&apos;onglerie d&apos;exception.
+              <p className="mt-7 max-w-xl text-pretty leading-relaxed text-muted-foreground md:text-lg">
+                La vitrine du glam, votre destination prestige à Libreville pour la coiffure haute couture 
+                et l&apos;esthétique d&apos;exception, adaptée à votre style.
               </p>
             </RevealOnScroll>
 
@@ -128,17 +124,44 @@ export default function HomePage() {
       {/* MARQUEE / valeur */}
       <section className="border-y border-border bg-foreground py-6 text-background">
         <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-3 px-5 text-center font-serif text-lg italic md:text-xl">
-          <span>Coiffure</span>
+          <span>Coiffure femme</span>
           <span className="text-accent">✦</span>
-          <span>Tresses</span>
+          <span>Tresses / braids</span>
           <span className="text-accent">✦</span>
-          <span>Espace Homme</span>
+          <span>Pose perruques</span>
           <span className="text-accent">✦</span>
-          <span>Onglerie</span>
+          <span>Extensions</span>
           <span className="text-accent">✦</span>
-          <span>Nail art</span>
+          <span>Soins capillaires</span>
           <span className="text-accent">✦</span>
-          <span>Soin signature</span>
+          <span>Lissage</span>
+          <span className="text-accent">✦</span>
+          <span>Mise en beauté</span>
+        </div>
+      </section>
+
+      {/* AVANTAGES */}
+      <section className="py-20 bg-background">
+        <div className="mx-auto max-w-7xl px-5 md:px-8">
+          <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4 md:gap-8">
+            {[
+              { title: "Professionnelles expérimentées", icon: Sparkles },
+              { title: "Produits de qualité", icon: Star },
+              { title: "Service personnalisé", icon: Sparkles },
+              { title: "Ambiance élégante et chaleureuse", icon: Star },
+            ].map((avantage, index) => (
+              <RevealOnScroll key={index} animation="animate-reveal-up" delay={`delay-${index * 100}`} once={false}>
+                <div className="flex flex-col items-center text-center">
+                  <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/50">
+                    <avantage.icon className="h-8 w-8 text-accent" />
+                  </div>
+                  <h3 className="max-w-[200px] font-serif text-lg leading-snug md:text-xl">
+                    {avantage.title}
+                  </h3>
+                </div>
+              </RevealOnScroll>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -173,7 +196,7 @@ export default function HomePage() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Link>
             <a
-              href="https://wa.me/241066581458"
+              href="https://wa.me/241074287590"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-foreground/20 px-8 py-4 text-xs font-medium uppercase tracking-[0.18em] transition-all hover:bg-foreground hover:text-background"

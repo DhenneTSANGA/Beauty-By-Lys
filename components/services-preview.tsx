@@ -5,25 +5,25 @@ import { RevealOnScroll } from "@/components/reveal-on-scroll"
 
 const services = [
   {
-    title: "Espace Femme",
+    title: "Coiffure & Styling",
     description:
-      "Coiffures, tresses, perruques et styling pour sublimer votre allure au féminin.",
+      "Coiffures femme, événementielles et mise en beauté sur mesure pour sublimer votre éclat.",
     image: "/images/beauty/femmes/36.png",
-    price: "À partir de 10 000 FCFA",
-  },
-  {
-    title: "Espace Homme",
-    description:
-      "Coupes précises, dégradés modernes et entretien de la barbe pour une élégance parfaite.",
-    image: "/images/beauty/hommes/103.png",
-    price: "À partir de 5 000 FCFA",
-  },
-  {
-    title: "Onglerie & Nail Art",
-    description:
-      "L'art de la pose, du design créatif et de l'entretien pour des mains sublimes.",
-    image: "/images/beauty/ongleries/7.png",
     price: "À partir de 15 000 FCFA",
+  },
+  {
+    title: "Tresses & Perruques",
+    description:
+      "Tresses, braids, extensions et pose de perruques réalisées avec une précision artistique.",
+    image: "/images/beauty/femmes/25.png",
+    price: "À partir de 20 000 FCFA",
+  },
+  {
+    title: "Soins & Lissage",
+    description:
+      "Soins capillaires revitalisants et lissages professionnels pour des cheveux soyeux et forts.",
+    image: "/images/beauty/femmes/1.png",
+    price: "À partir de 25 000 FCFA",
   },
 ]
 

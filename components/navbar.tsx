@@ -40,18 +40,18 @@ export function Navbar() {
           <Link
             href="/"
             className="group flex items-center gap-3"
-            aria-label="Beauty by Lys — Accueil"
+            aria-label="La vitrine du glam — Accueil"
           >
             <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg md:h-12 md:w-12">
               <Image
-                src="/images/logo.png"
-                alt="Logo Beauty by Lys"
+                src="/vitrine.png"
+                alt="Logo La vitrine du glam"
                 fill
                 className="object-cover"
               />
             </div>
             <span className="font-serif text-xl italic tracking-tight md:text-2xl">
-              Beauty <span className="text-accent">by Lys</span>
+              La vitrine <span className="text-accent">du glam</span>
             </span>
           </Link>
 
@@ -111,14 +111,14 @@ export function Navbar() {
             <div className="flex items-center gap-2">
               <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg">
                 <Image
-                  src="/images/logo.png"
-                  alt="Logo Beauty by Lys"
+                  src="/vitrine.png"
+                  alt="Logo La vitrine du glam"
                   fill
                   className="object-cover"
                 />
               </div>
               <span className="font-serif text-xl italic">
-                Beauty <span className="text-accent">by Lys</span>
+                La vitrine <span className="text-accent">du glam</span>
               </span>
             </div>
             <button

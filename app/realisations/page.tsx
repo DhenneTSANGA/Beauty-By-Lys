@@ -17,15 +17,6 @@ const realisationsFemmes = [
   { src: "/images/beauty/femmes/25.png", alt: "Mèches et balayage" },
 ]
 
-const realisationsHommes = [
-  { src: "/images/beauty/hommes/50.png", alt: "Dégradé à blanc" },
-  { src: "/images/beauty/hommes/58.png", alt: "Taille de barbe" },
-  { src: "/images/beauty/hommes/107.png", alt: "Coupe classique" },
-  { src: "/images/beauty/hommes/74.png", alt: "Contour parfait" },
-  { src: "/images/beauty/hommes/24.png", alt: "Soin visage homme" },
-  { src: "/images/beauty/hommes/47.png", alt: "Motif artistique" },
-]
-
 const realisationsOngleries = [
   { src: "/images/beauty/ongleries/200.png", alt: "French gold accent" },
   { src: "/images/beauty/ongleries/203.png", alt: "Chrome rose stiletto" },
@@ -119,13 +110,13 @@ export default function RealisationsPage() {
             <h1 className="mt-5 max-w-5xl font-serif text-5xl leading-[0.95] tracking-tight text-balance md:text-8xl">
               L&apos;Art du Détail,
               <br />
-              <span className="italic text-accent">Signé LYS.</span>
+              <span className="italic text-accent">Signé Le Glam.</span>
             </h1>
           </RevealOnScroll>
           <RevealOnScroll animation="animate-reveal-left" delay="delay-200" once={false}>
             <p className="mt-8 max-w-xl text-pretty leading-relaxed text-muted-foreground md:text-lg">
-              Découvrez nos plus belles réalisations à Libreville. Trois univers dédiés à la beauté, 
-              à l&apos;élégance et au soin de soi.
+              Découvrez nos plus belles réalisations à Libreville. Un univers dédié à la beauté, 
+              à l&apos;élégance et au soin de soi au féminin.
             </p>
           </RevealOnScroll>
         </div>
@@ -133,7 +124,7 @@ export default function RealisationsPage() {
 
       <div id="femmes" className="scroll-mt-24">
         <GallerySection 
-          title="Coiffures pour Femmes" 
+          title="Coiffures & Styles" 
           subtitle="De la coiffure haute couture aux tresses protectrices, sublimez votre féminité."
           items={realisationsFemmes}
           link="/realisations/femmes"
@@ -145,23 +136,9 @@ export default function RealisationsPage() {
         <hr className="border-border" />
       </div>
 
-      <div id="hommes" className="scroll-mt-24">
-        <GallerySection 
-          title="Coiffures pour Hommes" 
-          subtitle="L'expertise Barbier au service de votre style. Coupes précises et soins sur mesure."
-          items={realisationsHommes}
-          link="/realisations/hommes"
-          onImageClick={setActiveImage}
-        />
-      </div>
-
-      <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <hr className="border-border" />
-      </div>
-
       <div id="ongleries" className="scroll-mt-24">
         <GallerySection 
-          title="Ongleries" 
+          title="Onglerie & Nail Art" 
           subtitle="Nail art d'exception, manucure et pédicure pour des mains et des pieds parfaits."
           items={realisationsOngleries}
           link="/realisations/ongleries"

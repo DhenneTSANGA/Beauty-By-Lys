@@ -5,28 +5,20 @@ import { RevealOnScroll } from "@/components/reveal-on-scroll"
 
 const categories = [
   {
-    title: "Espace Femme",
+    title: "Coiffure & Beauté Femme",
     icon: "👩🏾‍🦱",
     image: "/images/beauty/femmes/30.png",
     intro:
-      "Sublimez votre chevelure avec nos prestations de coiffure sur mesure. Des tresses aux perruques, nous créons le style qui vous ressemble.",
+      "Révélez votre beauté avec nos prestations de coiffure sur mesure. Des tresses aux soins capillaires, nous créons le style qui vous ressemble avec expertise.",
     items: [
-      { name: "Coiffures", price: "30 000 FCFA" },
-      { name: "Tresses", price: "À partir de 25 000 FCFA" },
-      { name: "Perruques", price: "À partir de 15 000 FCFA" },
-      { name: "Styling", price: "10 000 FCFA" },
-    ],
-  },
-  {
-    title: "Espace Homme",
-    icon: "👨🏾‍🦱",
-    image: "/images/beauty/hommes/38.png",
-    intro:
-      "Un espace dédié à la précision et au style masculin. Profitez d'un moment de soin expert pour vos cheveux et votre barbe.",
-    items: [
-      { name: "Coupe", price: "5 000 FCFA" },
-      { name: "Dégradé", price: "7 000 FCFA" },
-      { name: "Barbe", price: "3 000 FCFA" },
+      { name: "Coiffure femme", price: "À partir de 30 000 FCFA" },
+      { name: "Coiffure événementielle", price: "À partir de 50 000 FCFA" },
+      { name: "Tresses / Braids", price: "À partir de 25 000 FCFA" },
+      { name: "Pose perruques", price: "À partir de 15 000 FCFA" },
+      { name: "Extensions", price: "À partir de 40 000 FCFA" },
+      { name: "Soins capillaires", price: "À partir de 20 000 FCFA" },
+      { name: "Lissage", price: "À partir de 60 000 FCFA" },
+      { name: "Mise en beauté", price: "À partir de 15 000 FCFA" },
     ],
   },
   {
@@ -63,7 +55,7 @@ export default function ExperiencePage() {
           </RevealOnScroll>
           <RevealOnScroll animation="animate-reveal-left" delay="delay-200" once={false}>
             <p className="mt-8 max-w-xl text-pretty leading-relaxed text-muted-foreground md:text-lg">
-              Chaque prestation Beauty by Lys est une parenthèse précise et
+              Chaque prestation La vitrine du glam est une parenthèse précise et
               soignée. Découvrez nos signatures et choisissez celle qui vous
               ressemble.
             </p>

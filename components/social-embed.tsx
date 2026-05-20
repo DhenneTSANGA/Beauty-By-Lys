@@ -18,14 +18,14 @@ export function SocialEmbed() {
               — Sur les réseaux
             </span>
             <h2 className="animate-reveal-left delay-100 mt-4 font-serif text-4xl leading-[1.05] tracking-tight text-balance md:text-6xl">
-              Suivez Beauty by Lys
+              Suivez La vitrine du glam
               <br />
               <span className="italic text-accent">en direct.</span>
             </h2>
           </div>
           <div className="flex items-center gap-3">
             <a
-              href="https://www.facebook.com/BEAUTYBYLYS/"
+              href="https://facebook.com/lavitrineduglam"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-background/30 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.16em] transition-colors hover:bg-background hover:text-foreground"
@@ -34,7 +34,7 @@ export function SocialEmbed() {
               Facebook
             </a>
             <a
-              href="https://www.instagram.com/beauty_by_lys1/"
+              href="https://instagram.com/lavitrinedu_glam"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-background/30 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.16em] transition-colors hover:bg-background hover:text-foreground"
@@ -43,7 +43,7 @@ export function SocialEmbed() {
               Instagram
             </a>
             <a
-              href="https://www.tiktok.com/@beauty.by.lys"
+              href="https://tiktok.com/@la_vitrine_du_glam"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-background/30 px-5 py-2.5 text-xs font-medium uppercase tracking-[0.16em] transition-colors hover:bg-background hover:text-foreground"
@@ -60,7 +60,7 @@ export function SocialEmbed() {
           {reels.map((r, i) => (
             <a
               key={i}
-              href="https://tiktok.com/@beauty.by.lys"
+              href="https://tiktok.com/@la_vitrine_du_glam"
               target="_blank"
               rel="noreferrer"
               className={`animate-reveal-up group relative aspect-[9/14] overflow-hidden rounded-xl ${

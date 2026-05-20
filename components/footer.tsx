@@ -11,24 +11,24 @@ export function Footer() {
             <Link href="/" className="group flex items-center gap-3">
               <div className="relative flex h-20 w-20 items-center justify-center overflow-hidden rounded-lg">
                 <Image
-                  src="/images/logo.png"
-                  alt="Logo Beauty by Lys"
+                  src="/vitrine.png"
+                  alt="Logo La vitrine du glam"
                   fill
                   className="object-cover"
                 />
               </div>
               <span className="font-serif text-3xl italic">
-                Beauty <span className="text-accent">by Lys</span>
+                La vitrine <span className="text-accent">du glam</span>
               </span>
             </Link>
             <p className="mt-5 max-w-md text-pretty leading-relaxed text-muted-foreground">
               Une parenthèse beauté pensée pour révéler votre élégance.
-              Coiffure haute couture, espace homme et onglerie d&apos;exception sur mesure.
+              Coiffures élégantes, tresses, soins capillaires et perruques sur mesure.
             </p>
 
             <div className="mt-8 flex items-center gap-3">
               <a
-                href="https://www.facebook.com/BEAUTYBYLYS/"
+                href="https://facebook.com/lavitrineduglam"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Facebook"
@@ -37,7 +37,7 @@ export function Footer() {
                 <Facebook className="h-4 w-4" />
               </a>
               <a
-                href="https://www.instagram.com/beauty_by_lys1/"
+                href="https://instagram.com/lavitrinedu_glam"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Instagram"
@@ -46,7 +46,7 @@ export function Footer() {
                 <Instagram className="h-4 w-4" />
               </a>
               <a
-                href="https://www.tiktok.com/@beauty.by.lys"
+                href="https://tiktok.com/@la_vitrine_du_glam"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="TikTok"
@@ -85,18 +85,18 @@ export function Footer() {
             <ul className="mt-5 space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-                <span>Quartier Louis, Libreville</span>
+                <span>Louis - En face de la Gaboprix, Libreville</span>
               </li>
               <li className="flex items-start gap-3">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-                <a href="tel:+241066581458" className="hover:text-accent">+241 066 58 14 58</a>
+                <a href="tel:+241074287590" className="hover:text-accent">+241 074 28 75 90</a>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-border pt-8 text-xs text-muted-foreground md:flex-row md:items-center">
-          <p>© {new Date().getFullYear()} Beauty by Lys. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} La vitrine du glam. Tous droits réservés.</p>
           <p className="font-serif italic">L&apos;élégance au bout des doigts.</p>
         </div>
       </div>
