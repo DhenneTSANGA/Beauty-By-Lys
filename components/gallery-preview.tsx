@@ -4,13 +4,12 @@ import { ArrowUpRight } from "lucide-react"
 import { RevealOnScroll } from "@/components/reveal-on-scroll"
 
 const items = [
-  { src: "/images/beauty/femmes/36.png", alt: "Coiffure de mariée" },
-  { src: "/images/beauty/hommes/57.png", alt: "Coupe Homme" },
-  { src: "/images/beauty/femmes/85.png", alt: "Lace frontale" },
-  { src: "/images/beauty/ongleries/210.png", alt: "Chrome rose stiletto" },
-  { src: "/images/beauty/ongleries/104.png", alt: "Ombre Nail Art" },
-  { src: "/images/beauty/ongleries/105.png", alt: "Nail Art Prestige" },
-  
+  { src: "/images/vitrine/coiffures/6.webp", alt: "Coiffure de mariée" },
+  { src: "/images/vitrine/coiffures/7.webp", alt: "Coupe Homme" },
+  { src: "/images/vitrine/coiffures/8.webp", alt: "Lace frontale" },
+  { src: "/images/vitrine/ongleries/12.webp", alt: "Chrome rose stiletto" },
+  { src: "/images/vitrine/ongleries/13.webp", alt: "Ombre Nail Art" },
+  { src: "/images/vitrine/ongleries/14.webp", alt: "Nail Art Prestige" },
 ]
 
 export function GalleryPreview() {

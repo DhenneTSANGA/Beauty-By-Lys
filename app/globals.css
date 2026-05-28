@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Beauty by Lys palette: cream, deep ink, dusty rose, glossy champagne */
+  /* La vitrine du glam palette: cream, deep ink, dusty rose, glossy champagne */
   --background: oklch(0.985 0.008 60);        /* warm cream */
   --foreground: oklch(0.18 0.01 50);           /* deep ink */
   --card: oklch(0.985 0.008 60);

@@ -42,7 +42,7 @@ export function Navbar() {
             className="group flex items-center gap-3"
             aria-label="La vitrine du glam — Accueil"
           >
-            <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg md:h-12 md:w-12">
+            <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-lg md:h-17 md:w-18">
               <Image
                 src="/vitrine.png"
                 alt="Logo La vitrine du glam"

@@ -8,21 +8,21 @@ const services = [
     title: "Coiffure & Styling",
     description:
       "Coiffures femme, événementielles et mise en beauté sur mesure pour sublimer votre éclat.",
-    image: "/images/beauty/femmes/36.png",
+    image: "/images/vitrine/coiffures/3.webp",
     price: "À partir de 15 000 FCFA",
   },
   {
     title: "Tresses & Perruques",
     description:
       "Tresses, braids, extensions et pose de perruques réalisées avec une précision artistique.",
-    image: "/images/beauty/femmes/25.png",
+    image: "/images/vitrine/coiffures/4.webp",
     price: "À partir de 20 000 FCFA",
   },
   {
     title: "Soins & Lissage",
     description:
       "Soins capillaires revitalisants et lissages professionnels pour des cheveux soyeux et forts.",
-    image: "/images/beauty/femmes/1.png",
+    image: "/images/vitrine/coiffures/5.webp",
     price: "À partir de 25 000 FCFA",
   },
 ]

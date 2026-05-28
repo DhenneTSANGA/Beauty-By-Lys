@@ -34,18 +34,18 @@ export default function UniversPage() {
                 — À propos
               </span>
               <h1 className="mt-5 font-serif text-4xl leading-[0.95] tracking-tight text-balance md:text-8xl">
-                Beauty by Lys,
+                La vitrine du glam,
                 <br />
                 <span className="italic text-accent">une signature.</span>
               </h1>
               <p className="mt-8 max-w-xl text-pretty leading-relaxed text-muted-foreground md:text-lg">
-                Beauty by Lys est née d&apos;une passion : celle de sublimer
+                La vitrine du glam est née d&apos;une passion : celle de sublimer
                 les femmes et les hommes à Libreville. Un salon pensé comme un
                 écrin de luxe, où la coiffure haute couture et l&apos;onglerie deviennent un art.
               </p>
             </RevealOnScroll>
           </div>
-          <div className="relative aspect-[4/4] overflow-hidden rounded-2xl md:col-span-6">
+          <div className="relative aspect-[5/6] overflow-hidden rounded-2xl md:col-span-6">
             <RevealOnScroll animation="animate-reveal-right" once={false} className="h-full w-full">
               <video
                 autoPlay
@@ -54,7 +54,7 @@ export default function UniversPage() {
                 playsInline
                 className="h-full w-full object-cover transition-transform duration-1000 hover:scale-105"
               >
-                <source src="/videos/about.mp4" type="video/mp4" />
+                <source src="/videos/bg3.mp4" type="video/mp4" />
               </video>
             </RevealOnScroll>
           </div>
@@ -79,7 +79,7 @@ export default function UniversPage() {
           <div className="md:col-span-7">
             <RevealOnScroll animation="animate-reveal-right" once={false} delay="delay-200">
               <p className="text-pretty leading-relaxed md:text-lg">
-                Beauty by Lys, c&apos;est un univers feutré où le temps
+                La vitrine du glam, c&apos;est un univers feutré où le temps
                 ralentit. Une philosophie qui place la qualité au cœur de
                 chaque geste, et qui célèbre l&apos;élégance moderne.
               </p>
@@ -141,7 +141,7 @@ export default function UniversPage() {
         <div className="relative h-[60vh] min-h-[400px] w-full">
           <Image
             src="/images/salon-interior.jpg"
-            alt="Intérieur du salon Beauty by Lys"
+            alt="Intérieur du salon La vitrine du glam"
             fill
             className="object-cover"
             sizes="100vw"
@@ -154,7 +154,7 @@ export default function UniversPage() {
                 emporte avec soi. »
               </p>
               <p className="mt-6 text-xs uppercase tracking-[0.22em] text-background/70">
-                — Lys, fondatrice
+                — La Vitrine, fondatrice
               </p>
             </RevealOnScroll>
           </div>

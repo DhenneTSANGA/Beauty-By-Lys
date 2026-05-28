@@ -7,22 +7,22 @@ import { X, ArrowLeft, Plus } from "lucide-react"
 import { RevealOnScroll } from "@/components/reveal-on-scroll"
 
 const images = [
-  { src: "/images/beauty/femmes/31.png", alt: "Lace longue lisse" },
-  { src: "/images/beauty/femmes/32.png", alt: "Lace longue ondulée" },
-  { src: "/images/beauty/femmes/34.png", alt: "Lace courte bouclée" },
-  { src: "/images/beauty/femmes/64.png", alt: "Lace courte lisse" },
-  { src: "/images/beauty/femmes/65.png", alt: "Lace courte ondulée" },
-  { src: "/images/beauty/femmes/76.png", alt: "Lace courte bouclée" },
-  { src: "/images/beauty/femmes/80.png", alt: "Lace bouclée" },
-  { src: "/images/beauty/femmes/81.png", alt: "Perruque longue" },
-  { src: "/images/beauty/femmes/88.png", alt: "Perruque courte" },
-  { src: "/images/beauty/femmes/89.png", alt: "Perruque bouclée" },
-  { src: "/images/beauty/femmes/111.png", alt: "tresses longues" },
-  { src: "/images/beauty/femmes/108.png", alt: "Lace lisse" },
-  { src: "/images/beauty/femmes/43.png", alt: "Coiffure afro" },
-  { src: "/images/beauty/femmes/4.png", alt: "Coiffure afro" },
-  { src: "/images/beauty/femmes/16.png", alt: "Coiffure afro" },
-  { src: "/images/beauty/femmes/46.png", alt: "Coiffure afro" },
+  { src: "/images/vitrine/coiffures/1.webp", alt: "Lace longue lisse" },
+  { src: "/images/vitrine/coiffures/2.webp", alt: "Lace longue ondulée" },
+  { src: "/images/vitrine/coiffures/3.webp", alt: "Lace courte bouclée" },
+  { src: "/images/vitrine/coiffures/4.webp", alt: "Lace courte lisse" },
+  { src: "/images/vitrine/coiffures/5.webp", alt: "Lace courte ondulée" },
+  { src: "/images/vitrine/coiffures/6.webp", alt: "Lace courte bouclée" },
+  { src: "/images/vitrine/coiffures/7.webp", alt: "Lace bouclée" },
+  { src: "/images/vitrine/coiffures/8.webp", alt: "Perruque longue" },
+  { src: "/images/vitrine/coiffures/9.webp", alt: "Perruque courte" },
+  { src: "/images/vitrine/coiffures/10.webp", alt: "Perruque bouclée" },
+  { src: "/images/vitrine/coiffures/17.webp", alt: "tresses longues" },
+  { src: "/images/vitrine/coiffures/18.webp", alt: "Lace lisse" },
+  { src: "/images/vitrine/coiffures/19.webp", alt: "Coiffure afro" },
+  { src: "/images/vitrine/coiffures/27.webp", alt: "Coiffure afro" },
+  { src: "/images/vitrine/coiffures/28.webp", alt: "Coiffure afro" },
+  { src: "/images/vitrine/coiffures/29.webp", alt: "Coiffure afro" },
 ]
 
 export default function FemmesPage() {
@@ -101,7 +101,7 @@ export default function FemmesPage() {
           <div className="relative h-full w-full max-w-5xl overflow-hidden rounded-xl animate-in zoom-in-95 duration-300">
             <Image
               src={activeImage}
-              alt="Réalisation Beauty by Lys"
+              alt="Réalisation La vitrine du glam"
               fill
               className="object-contain"
               priority

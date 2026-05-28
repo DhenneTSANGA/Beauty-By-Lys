@@ -2,8 +2,8 @@ import sharp from "sharp";
 import fs from "fs";
 import path from "path";
 
-const inputDir = "./public/images/aaa";
-const outputDir = "./public/optimized/new";
+const inputDir = "./public/images/vitrine";
+const outputDir = "./public/optimized";
 
 if (!fs.existsSync(outputDir)) {
   fs.mkdirSync(outputDir, { recursive: true });

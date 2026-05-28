@@ -7,22 +7,22 @@ import { X, ArrowLeft, Plus } from "lucide-react"
 import { RevealOnScroll } from "@/components/reveal-on-scroll"
 
 const images = [
-  { src: "/images/beauty/ongleries/200.png", alt: "French gold accent" },
-  { src: "/images/beauty/ongleries/203.png", alt: "Chrome rose stiletto" },
-  { src: "/images/beauty/ongleries/206.png", alt: "French gold accent" },
-  { src: "/images/beauty/ongleries/207.png", alt: "French gold accent" },
-  { src: "/images/beauty/ongleries/209.png", alt: "French gold accent" },
-  { src: "/images/beauty/ongleries/8.png", alt: "French gold accent" },
-  { src: "/images/beauty/ongleries/41.png", alt: "French milky" },
-  { src: "/images/beauty/ongleries/7.png", alt: "Floral nail art" },
-  { src: "/images/beauty/ongleries/42.png", alt: "Rouge classique" },
-  { src: "/images/beauty/ongleries/96.png", alt: "Floral nail art" },
-  { src: "/images/beauty/ongleries/6.png", alt: "Nail Art Prestige" },
-  { src: "/images/beauty/ongleries/97.png", alt: "French gold accent" },
-  { src: "/images/beauty/ongleries/112.png", alt: "Chrome rose stiletto" },
-  { src: "/images/beauty/ongleries/208.png", alt: "Chrome rose stiletto" },
-  { src: "/images/beauty/ongleries/204.png", alt: "Chrome rose stiletto" },
-  { src: "/images/beauty/ongleries/210.png", alt: "Chrome rose stiletto" },
+  { src: "/images/vitrine/ongleries/11.webp", alt: "French gold accent" },
+  { src: "/images/vitrine/ongleries/12.webp", alt: "Chrome rose stiletto" },
+  { src: "/images/vitrine/ongleries/13.webp", alt: "French gold accent" },
+  { src: "/images/vitrine/ongleries/14.webp", alt: "French gold accent" },
+  { src: "/images/vitrine/ongleries/15.webp", alt: "French gold accent" },
+  { src: "/images/vitrine/ongleries/16.webp", alt: "French gold accent" },
+  { src: "/images/vitrine/ongleries/33.webp", alt: "French milky" },
+  { src: "/images/vitrine/ongleries/34.webp", alt: "Floral nail art" },
+  { src: "/images/vitrine/ongleries/35.webp", alt: "Rouge classique" },
+  { src: "/images/vitrine/ongleries/36.webp", alt: "Floral nail art" },
+  { src: "/images/vitrine/ongleries/37.webp", alt: "Nail Art Prestige" },
+  { src: "/images/vitrine/ongleries/38.webp", alt: "French gold accent" },
+  { src: "/images/vitrine/ongleries/39.webp", alt: "Chrome rose stiletto" },
+  { src: "/images/vitrine/ongleries/40.webp", alt: "Chrome rose stiletto" },
+  { src: "/images/vitrine/ongleries/41.webp", alt: "Chrome rose stiletto" },
+  { src: "/images/vitrine/ongleries/42.webp", alt: "Chrome rose stiletto" },
 ]
 
 export default function OngleriesPage() {
@@ -101,7 +101,7 @@ export default function OngleriesPage() {
           <div className="relative h-full w-full max-w-5xl overflow-hidden rounded-xl animate-in zoom-in-95 duration-300">
             <Image
               src={activeImage}
-              alt="Réalisation Beauty by Lys"
+              alt="Réalisation La vitrine du glam"
               fill
               className="object-contain"
               priority

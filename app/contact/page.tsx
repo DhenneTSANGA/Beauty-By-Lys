@@ -111,7 +111,7 @@ export default function ContactPage() {
             <RevealOnScroll animation="animate-reveal-right" once={false} className="h-full">
               <div className="relative h-full min-h-[500px] overflow-hidden rounded-[2.5rem] border border-border shadow-inner">
                 <iframe
-                  title="Localisation Beauty by Lys"
+                  title="Localisation La vitrine du glam"
                   src="https://www.google.com/maps?q=Libreville+Gabon&output=embed"
                   className="absolute inset-0 h-full w-full grayscale contrast-[1.1]"
                   loading="lazy"

@@ -14,7 +14,7 @@ const reviews = [
   {
     name: "Inès D.",
     handle: "@inesd_",
-    text: "J'ai découvert Beauty by Lys sur TikTok et je comprends pourquoi tout le monde en parle. Pose nette, finition parfaite.",
+    text: "J'ai découvert La vitrine du glam sur TikTok et je comprends pourquoi tout le monde en parle. Pose nette, finition parfaite.",
   },
 ]
 

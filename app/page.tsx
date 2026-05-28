@@ -91,12 +91,12 @@ export default function HomePage() {
                   muted
                   playsInline
                   className="h-full w-full object-cover transition-transform duration-1000 hover:scale-105"
-                  poster="/images/beauty/femmes/hero.png"
+                  poster="/images/vitrine/coiffures/1.webp"
                 >
-                  <source src="/videos/hero.mp4" type="video/mp4" />
+                  <source src="/videos/bg5.mp4" type="video/mp4" />
                   <Image
-                    src="/images/portrait.jpg"
-                    alt="Coiffure élégante Beauty by Lys"
+                    src="/images/vitrine/coiffures/2.webp"
+                    alt="Coiffure élégante La vitrine du glam"
                     fill
                     priority
                     className="object-cover"

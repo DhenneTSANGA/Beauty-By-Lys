@@ -9,7 +9,7 @@ export function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false)
 
   const whatsappNumber = "24166581458"
-  const message = "Bonjour Beauty by Lys, je souhaiterais obtenir des informations sur vos prestations."
+  const message = "Bonjour La vitrine du glam, je souhaiterais obtenir des informations sur vos prestations."
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4">
@@ -33,7 +33,7 @@ export function WhatsAppButton() {
                   />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold">Beauty by Lys</p>
+                  <p className="text-sm font-semibold">La vitrine du glam</p>
                   <p className="text-[10px] opacity-90">Répond généralement rapidement</p>
                 </div>
               </div>

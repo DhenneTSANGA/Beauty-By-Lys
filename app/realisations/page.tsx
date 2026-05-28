@@ -9,21 +9,30 @@ import { RevealOnScroll } from "@/components/reveal-on-scroll"
 import { cn } from "@/lib/utils"
 
 const realisationsFemmes = [
-  { src: "/images/beauty/femmes/100.png", alt: "Tresses Signature" },
-  { src: "/images/beauty/femmes/82.png", alt: "Coiffure de mariée" },
-  { src: "/images/beauty/femmes/98.png", alt: "Chignon sophistiqué" },
-  { src: "/images/beauty/femmes/79.png", alt: "Tresses bohèmes" },
-  { src: "/images/beauty/femmes/20.png", alt: "Coupe au carré" },
-  { src: "/images/beauty/femmes/25.png", alt: "Mèches et balayage" },
+  { src: "/images/vitrine/coiffures/10.webp", alt: "Tresses Signature" },
+  { src: "/images/vitrine/coiffures/17.webp", alt: "Coiffure de mariée" },
+  { src: "/images/vitrine/coiffures/18.webp", alt: "Chignon sophistiqué" },
+  { src: "/images/vitrine/coiffures/19.webp", alt: "Tresses bohèmes" },
+  { src: "/images/vitrine/coiffures/2.webp", alt: "Coupe au carré" },
+  { src: "/images/vitrine/coiffures/3.webp", alt: "Mèches et balayage" },
 ]
 
 const realisationsOngleries = [
-  { src: "/images/beauty/ongleries/200.png", alt: "French gold accent" },
-  { src: "/images/beauty/ongleries/203.png", alt: "Chrome rose stiletto" },
-  { src: "/images/beauty/ongleries/206.png", alt: "French gold accent" },
-  { src: "/images/beauty/ongleries/207.png", alt: "French gold accent" },
-  { src: "/images/beauty/ongleries/8.png", alt: "French gold accent" },
-  { src: "/images/beauty/ongleries/210.png", alt: "Floral nail art" },
+  { src: "/images/vitrine/ongleries/16.webp", alt: "French gold accent" },
+  { src: "/images/vitrine/ongleries/33.webp", alt: "Chrome rose stiletto" },
+  { src: "/images/vitrine/ongleries/34.webp", alt: "French gold accent" },
+  { src: "/images/vitrine/ongleries/35.webp", alt: "French gold accent" },
+  { src: "/images/vitrine/ongleries/36.webp", alt: "French gold accent" },
+  { src: "/images/vitrine/ongleries/37.webp", alt: "Floral nail art" },
+]
+
+const realisationsCils = [
+  { src: "/images/vitrine/cils/20.webp", alt: "Volume Russe" },
+  { src: "/images/vitrine/cils/21.webp", alt: "Cil à cil" },
+  { src: "/images/vitrine/cils/22.webp", alt: "Pose Mixte" },
+  { src: "/images/vitrine/cils/23.webp", alt: "Volume Intense" },
+  { src: "/images/vitrine/cils/24.webp", alt: "Regard Naturel" },
+  { src: "/images/vitrine/cils/25.webp", alt: "Extension Sophistiquée" },
 ]
 
 function GallerySection({ 
@@ -146,6 +155,20 @@ export default function RealisationsPage() {
         />
       </div>
 
+      <div className="mx-auto max-w-7xl px-5 md:px-8">
+        <hr className="border-border" />
+      </div>
+
+      <div id="cils" className="scroll-mt-24">
+        <GallerySection 
+          title="Extension de cils" 
+          subtitle="Un regard sublimé et intense grâce à nos techniques de pose d'extensions."
+          items={realisationsCils}
+          link="/realisations/extensioncils"
+          onImageClick={setActiveImage}
+        />
+      </div>
+
       <div className="mb-20">
         <SocialEmbed />
       </div>
@@ -166,7 +189,7 @@ export default function RealisationsPage() {
           <div className="relative h-full w-full max-w-5xl overflow-hidden rounded-xl animate-in zoom-in-95 duration-300">
             <Image
               src={activeImage}
-              alt="Réalisation Beauty by Lys"
+              alt="Réalisation La vitrine du glam"
               fill
               className="object-contain"
               priority

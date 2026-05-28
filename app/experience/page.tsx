@@ -7,7 +7,8 @@ const categories = [
   {
     title: "Coiffure & Beauté Femme",
     icon: "👩🏾‍🦱",
-    image: "/images/beauty/femmes/30.png",
+    video: "/videos/bg4.mp4",
+    image: "/images/vitrine/coiffures/9.webp",
     intro:
       "Révélez votre beauté avec nos prestations de coiffure sur mesure. Des tresses aux soins capillaires, nous créons le style qui vous ressemble avec expertise.",
     items: [
@@ -24,13 +25,29 @@ const categories = [
   {
     title: "Onglerie & Nail Art",
     icon: "💅🏾",
-    image: "/images/beauty/ongleries/7.png",
+    video: "/videos/bg2.mp4",
+    image: "/images/vitrine/ongleries/15.webp",
     intro:
       "L'excellence du détail pour vos mains. De la pose structurelle au nail art le plus créatif, confiez-nous vos envies.",
     items: [
       { name: "Pose (Gel, Semi-permanent, Capsules)", price: "À partir de 15 000 FCFA" },
       { name: "Design (Nail Art)", price: "À partir de 5 000 FCFA" },
       { name: "Entretien & Dépose", price: "À partir de 5 000 FCFA" },
+    ],
+  },
+  {
+    title: "Extension de cils",
+    icon: "👁️",
+    video: "/videos/bg-hero.mp4",
+    image: "/images/vitrine/cils/20.webp",
+    intro:
+      "Sublimez votre regard avec nos extensions de cils sur mesure. Du naturel au volume intense, nous adaptons la pose à votre morphologie.",
+    items: [
+      { name: "Pose Classique (Cil à cil)", price: "À partir de 25 000 FCFA" },
+      { name: "Volume Russe", price: "À partir de 45 000 FCFA" },
+      { name: "Pose Mixte (Hybride)", price: "À partir de 35 000 FCFA" },
+      { name: "Remplissage", price: "À partir de 20 000 FCFA" },
+      { name: "Dépose", price: "À partir de 10 000 FCFA" },
     ],
   },
 ]
@@ -77,13 +94,23 @@ export default function ExperiencePage() {
                 i % 2 === 1 ? "md:order-2" : ""
               }`}
             >
-              <Image
-                src={cat.image}
-                alt={cat.title}
-                fill
-                className="object-cover transition-transform duration-1000 hover:scale-105"
-                sizes="(max-width: 768px) 100vw, 40vw"
-              />
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="h-full w-full object-cover transition-transform duration-1000 hover:scale-105"
+                poster={cat.image}
+              >
+                <source src={cat.video} type="video/mp4" />
+                <Image
+                  src={cat.image}
+                  alt={cat.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                />
+              </video>
               <span className="absolute left-5 top-5 rounded-full bg-background/90 px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.18em] backdrop-blur">
                 0{i + 1} · {cat.title}
               </span>

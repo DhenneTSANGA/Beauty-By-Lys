@@ -21,22 +21,22 @@ const cormorant = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
-  title: "Beauty by Lys — Onglerie & Mise en beauté",
+  title: "La vitrine du glam — Coiffure, Onglerie & Beauté",
   description:
-    "Beauty by Lys, salon premium spécialisé en onglerie et prestations esthétiques. Réalisations sur mesure, élégance moderne et expérience beauté immersive.",
+    "La vitrine du glam, salon premium spécialisé en coiffure, onglerie et prestations esthétiques à Libreville. Réalisations sur mesure, élégance moderne et expérience beauté immersive.",
   keywords: [
     "onglerie",
     "nail art",
     "beauté",
     "manucure",
     "salon esthétique",
-    "Beauty by Lys",
+    "La vitrine du glam",
   ],
   generator: "v0.app",
   openGraph: {
-    title: "Beauty by Lys — Onglerie & Mise en beauté",
+    title: "La vitrine du glam — Coiffure, Onglerie & Beauté",
     description:
-      "Salon premium spécialisé en onglerie et prestations esthétiques.",
+      "Salon premium spécialisé en coiffure, onglerie et prestations esthétiques à Libreville.",
     type: "website",
     locale: "fr_FR",
   },

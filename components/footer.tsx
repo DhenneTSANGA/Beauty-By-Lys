@@ -9,7 +9,7 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
             <Link href="/" className="group flex items-center gap-3">
-              <div className="relative flex h-20 w-20 items-center justify-center overflow-hidden rounded-lg">
+              <div className="relative flex h-34 w-30 items-center justify-center overflow-hidden rounded-lg">
                 <Image
                   src="/vitrine.png"
                   alt="Logo La vitrine du glam"
